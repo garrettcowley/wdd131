@@ -69,7 +69,7 @@
     nav ul {
         display: flex;
         list-style-type: none;
-        margin: 3;
+        margin: 3rem;
         padding: 0;
         gap: 20px;
     }
