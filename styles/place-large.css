@@ -1,0 +1,112 @@
+@media (min-width: 500px) {
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    header {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 1rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-container {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .hero-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .floating-cards {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, -50%);
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        position: relative;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        padding: 1.5rem;
+        width: 300px;
+        text-align: center;
+    }
+
+    .weather {
+        position: relative;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        padding: 1.5rem;
+        width: 300px;
+        text-align: center;
+    }
+
+    .card h2,
+    .weather h2 {
+        font-family: 'Roboto', sans-serif;
+        color: #2c3e50;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .card ul,
+    .weather ul {
+        list-style: none;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .card ul li,
+    .weather ul li {
+        margin-bottom: 0.75rem;
+    }
+
+    .weather-icon {
+        display: inline;
+    }
+
+    .weather-svg {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        font-size: 0.875rem;
+    }
+
+    footer p {
+        margin: 0;
+    }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD131 – Place - Garrett Cowley</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <meta name="author" content="Garrett Cowley" />
+    <meta name="description" content="Place page about Dallas, Texas written by Garrett Cowley./">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+<body>
+    <header>
+        <h1>Dallas-Fort Worth</h1>
+    </header>
+<div class="hero-container">
+    <picture class="hero-image">
+        <source media="(min-width: 1000px)" srcset="images/dfw-large.webp">
+        <img src="images/dfw-small.webp" alt="Downtown Dallas" width="500" height="250">
+    </picture>
+    <div class="floating-cards">
+        <section class="card">
+            <h2>Data</h2>
+            <ul>
+                <li><b>Area: </b>1,747 sq mi</li>
+                <li><b>Population: </b>7,637,387</li>
+                <li><b>GDP: </b>$668.9 Billion</li>
+                <li><b>Time Zones: </b>CST & CDT</li>
+            </ul>
+        </section>
+        <section class="weather">
+        <h2>
+            Weather
+            <span class="weather-icon">☁️</span>
+        </h2>
+        <img src="images/weather.svg" alt="Weather icon" class="weather-svg">
+            <ul>
+                <li><b>Temperature: </b>44°F</li>
+                <li><b>Conditions: </b>Cloudy</li>
+                <li><b>Wind: </b>5 mph</li>
+                <li><b>Wind Chill: </b><span id="windChillValue">N/A</span></li>
+            </ul>
+        </section>
+    </div>
+</div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Garrett Cowley</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+
+</html>
