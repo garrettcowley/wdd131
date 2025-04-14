@@ -88,6 +88,12 @@
         font-size: 1.5rem;
         font-weight: 700;
     }
+    
+    .weather h2::after{
+        content: " ☁️";
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
 
     .card ul,
     .weather ul {
@@ -99,10 +105,6 @@
     .card ul li,
     .weather ul li {
         margin-bottom: 0.75rem;
-    }
-
-    .weather-icon {
-        display: inline;
     }
 
     .weather-svg {
