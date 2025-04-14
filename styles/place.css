@@ -1,14 +1,24 @@
+:root {
+    --font-family: 'Open Sans', sans-serif;
+    --text-color: #333;
+    --background-color: #f5f5f5;
+    --header-bg-color: #2c3e50;
+    --header-text-color: #ecf0f1;
+    --card-bg-color: #ffffff;
+    --link-color: #3498db;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
     padding: 1rem;
     text-align: center;
 }
@@ -17,7 +27,7 @@ main {
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
-    background-color: #ffffff;
+    background-color: var(--card-bg-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -27,7 +37,7 @@ main {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
-    background-color: #ffffff;
+    background-color: var(--card-bg-color);
     border: 1px solid #dddddd;
     border-radius: 8px;
     margin-bottom: 2rem;
@@ -41,7 +51,7 @@ main {
     border-radius: 4px;
 }
 
-.card ul, 
+.card ul,
 .weather ul {
     list-style: none;
     padding: 0;
@@ -52,13 +62,13 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.card ul li a, 
+.card ul li a,
 .weather ul li a {
-    color: #3498db;
+    color: var(--link-color);
     text-decoration: none;
 }
 
-.card ul li a:hover, 
+.card ul li a:hover,
 .weather ul li a:hover {
     text-decoration: underline;
 }
@@ -73,13 +83,21 @@ main {
     width: 50px;
     height: auto;
 }
+
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
 }
 
 footer p {
     margin: 0;
+}
+
+h2::before {
+    content: "🤠 ";
+    color: var(--link-color);
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
 }
